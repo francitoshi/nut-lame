@@ -1,7 +1,7 @@
 /*
- * Jump3rTest.java
+ * LameTest.java
  *
- * Copyright (c) 2015 Francisco Gómez Carrasco
+ * Copyright (c) 2015-2025 francitoshi@gmail.com
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
- * Report bugs or new features to: flikxxi@gmail.com
+ * Report bugs or new features to: francitoshi@gmail.com
  */
 package io.nut.lame.mp3;
 
@@ -24,7 +24,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.BlockingQueue;
-import org.junit.Test;
+import mp3.Mp3Builder;
+import org.junit.jupiter.api.Test;
 
 public class LameTest
 {
