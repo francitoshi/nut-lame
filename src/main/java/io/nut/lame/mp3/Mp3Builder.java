@@ -20,12 +20,13 @@
  */
 package io.nut.lame.mp3;
 
+import io.nut.base.audio.speech.AudioBuilder;
 import io.nut.base.io.IO;
-import com.softenido.cafecore.speech.AudioBuilder;
-import mp3.GetAudio.SoundFileFormat;
+import io.nut.lame.mp3.GetAudio.SoundFileFormat;
 
 import java.io.*;
 import java.nio.ByteOrder;
+import java.nio.file.Files;
 import java.util.concurrent.BlockingQueue;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -112,9 +113,9 @@ public class Mp3Builder extends AudioBuilder implements Runnable
         this.in_bitwidth = 16;
         this.in_signed = true;
         this.in_endian = ByteOrder.LITTLE_ENDIAN;
-        this.lame = new Lame(this.out, this.err);
+        this.lame = new Lame();
 
-        File mp3 = overwrite ? new File(baseDir, name+ext) : Files.createNonExistentFile(baseDir, name, ext);
+        File mp3 = overwrite ? new File(baseDir, name+ext) : IO.createNonExistentFile(baseDir, name, ext);
 
         System.out.println("--------------------------------------------------------------------------------------------");
 

@@ -32,7 +32,8 @@ import java.nio.ByteOrder;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Parse {
+public class Parse 
+{
 
   private static boolean INTERNAL_OPTS = false;
   /**
@@ -1535,16 +1536,16 @@ public class Parse {
      * ID3v2 wants it
      */
     TENC_UCS2
-  }
+  };
 
-  ;
+    enum ID3TAG_MODE
+    {
+        ID3TAG_MODE_DEFAULT, ID3TAG_MODE_V1_ONLY, ID3TAG_MODE_V2_ONLY
+    }
 
-  private enum ID3TAG_MODE {
-    ID3TAG_MODE_DEFAULT, ID3TAG_MODE_V1_ONLY, ID3TAG_MODE_V2_ONLY
-  }
-
-  public static class NoGap {
-    int num_nogap;
-  }
+    public static class NoGap
+    {
+        int num_nogap;
+    }
 
 }

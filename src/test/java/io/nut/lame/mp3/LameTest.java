@@ -24,13 +24,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.concurrent.BlockingQueue;
-import mp3.Mp3Builder;
 import org.junit.jupiter.api.Test;
 
 public class LameTest
 {
-    
-
     static final String MP3 = ".mp3";
     /**
      * Test of main method, of class Jump3r.
@@ -38,7 +35,7 @@ public class LameTest
     @Test
     public void testMain() throws IOException, Exception
     {
-        final URL path = Jump3rTest.class.getResource("phone.wav");
+        final URL path = LameTest.class.getResource("phone.wav");
         final File wav = new File(path.toString().replace("file:", ""));
         final File mp3 = new File(wav+MP3);
 
