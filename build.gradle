@@ -2,6 +2,7 @@ plugins
 {
     id 'java'
     id 'application'
+    id 'maven-publish'  // for JitPack
 }
 
 group = 'com.github.francitoshi'
