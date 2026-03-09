@@ -49,3 +49,17 @@ application
 {
     mainClass = 'io.nut.lame.mp3.Main'
 }
+
+publishing 
+{
+    publications 
+    {
+        maven(MavenPublication) 
+        {
+            groupId = 'com.github.francitoshi'
+            artifactId = 'nut-lame'
+            version = project.version
+            from components.java
+        }
+    }
+}
