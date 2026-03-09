@@ -1,0 +1,50 @@
+plugins 
+{
+    id 'java'
+    id 'application'
+}
+
+group = 'com.github.francitoshi'
+
+version = '0.1.55'
+//remember to execute 'git tag -a x.x.x -m "Version x.x.x"'
+
+repositories 
+{
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
+//run "./gradlew dependencies --configuration runtimeClasspath" to verify version problems
+
+def nutVersion = version
+
+dependencies
+{
+    implementation "com.github.francitoshi:nut-base:${nutVersion}"
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
+}
+
+java 
+{
+    sourceCompatibility = 1.8 // java 8
+    targetCompatibility = 1.8
+    withSourcesJar()
+//    withJavadocJar()
+}
+
+wrapper 
+{
+    gradleVersion = "8.2"
+    distributionType = Wrapper.DistributionType.ALL
+}
+
+test 
+{
+    useJUnitPlatform()
+}
+
+application 
+{
+    mainClass = 'io.nut.lame.mp3.Main'
+}
