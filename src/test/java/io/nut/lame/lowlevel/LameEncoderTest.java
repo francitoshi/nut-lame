@@ -1,7 +1,5 @@
 package io.nut.lame.lowlevel;
 
-import static io.nut.base.util.Assert.assertEquals;
-import static io.nut.base.util.Assert.assertTrue;
 import io.nut.lame.mp3.Lame;
 import io.nut.lame.mp3.MPEGMode;
 import org.junit.jupiter.api.Test;
@@ -12,6 +10,8 @@ import javax.sound.sampled.UnsupportedAudioFileException;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
 /**
