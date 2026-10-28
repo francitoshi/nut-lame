@@ -19,8 +19,8 @@ def nutVersion = version
 
 dependencies
 {
-    implementation "io.github.francitoshi.nut-base:nut-base-audio:${nutVersion}"
-    implementation "io.github.francitoshi.nut-base:nut-base-commons:${nutVersion}"
+    implementation "com.github.francitoshi.nut-base:nut-base-audio:${nutVersion}"
+    implementation "com.github.francitoshi.nut-base:nut-base-commons:${nutVersion}"
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
 }
