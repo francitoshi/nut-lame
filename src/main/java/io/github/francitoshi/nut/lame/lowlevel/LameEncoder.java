@@ -408,6 +408,4 @@ public class LameEncoder {
     return MPEG1L3;
   }
 
-  /** * Lame.java ** */
-
 }

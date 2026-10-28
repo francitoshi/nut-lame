@@ -19,8 +19,8 @@ def nutVersion = version
 
 dependencies
 {
-    implementation "com.github.francitoshi.nut-base:nut-base-audio:${nutVersion}"
-    implementation "com.github.francitoshi.nut-base:nut-base-commons:${nutVersion}"
+    implementation "io.github.francitoshi.nut-base:nut-base-audio:${nutVersion}"
+    implementation "io.github.francitoshi.nut-base:nut-base-commons:${nutVersion}"
 
     testImplementation 'org.junit.jupiter:junit-jupiter:5.10.3'
 }
@@ -55,7 +55,7 @@ publishing
     {
         maven(MavenPublication) 
         {
-            groupId = 'com.github.francitoshi'
+            groupId = 'io.github.francitoshi'
             artifactId = 'nut-lame'
             version = project.version
             from components.java
