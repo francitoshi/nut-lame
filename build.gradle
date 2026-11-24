@@ -33,12 +33,6 @@ java
 //    withJavadocJar()
 }
 
-wrapper 
-{
-    gradleVersion = "8.2"
-    distributionType = Wrapper.DistributionType.ALL
-}
-
 test 
 {
     useJUnitPlatform()
@@ -62,3 +56,10 @@ publishing
         }
     }
 }
+
+wrapper 
+{
+    gradleVersion = "8.2"
+    distributionType = Wrapper.DistributionType.ALL
+}
+
